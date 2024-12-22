@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es2016",
+        "module": "es2020", /* node16 "ESNext",*/
+        /*"noUnusedLocals": true,*/
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "declaration": true
+    },
+    "files" : [
+        "cornus.ts", "test.ts"
+    ]
+}

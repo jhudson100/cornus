@@ -1,0 +1,102 @@
+/* (c) 2023 j hudson */
+
+/* Basic style options for a tree node */
+.cornus-node {
+
+    /* These may be changed to customize the appearance*/
+    border: 2px solid black;
+    padding: 3px;
+    background: rgba(255,255,128,0.5);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.25) 3px 3px 5px;
+    white-space: pre;
+
+    /* It is recommended to have a margin of 0 */
+    margin: 0px;
+
+    /*These must be set*/
+    box-sizing: border-box;
+    position: absolute;
+    /* left, right, top, bottom, width, and height
+     * are set in script code. */
+
+}
+
+/* Style applied to leaf nodes */
+.cornus-node-leaf {
+}
+
+
+/* Style applied to root node */
+.cornus-node-root {
+}
+
+
+/* Style applied to the every line of text in a node label */
+.cornus-node-label {
+
+}
+
+/* Style applied to the first line of text in a node label */
+.cornus-node-label-firstline {
+
+}
+
+/* Style applied to the last line of text in a node label */
+.cornus-node-label-lastline {
+
+}
+
+
+/* Style for vertical lines connecting a tree node to its children */
+.cornus-vertical-edge {
+    /* Thickness of the line is governed by width;
+     * make sure to set margin-left to -0.5 * width */
+    width: 2px;
+    margin-left: -1px;
+
+    /* Changes the color of the line */
+    background: black;
+
+    box-shadow: rgba(0,0,0,0.25) 3px 3px 5px;
+
+    /* This must be set. */
+    position: absolute;
+}
+
+/* Style for horizontal lines connecting a tree node to its children */
+.cornus-horizontal-edge {
+
+    /* Thickness of the line is governed by height;
+     * make sure to set margin-top to -0.5 * height */
+    height: 2px;
+    margin-top: -1px;
+
+    /* Changes the color of the line */
+    background: black;
+
+    box-shadow: rgba(0,0,0,0.25) 3px 3px 5px;
+
+    /* This must be set */
+    position: absolute;
+}
+
+/***********************************************************
+ * Classes below this point are used for internal purposes.
+ * If they are changed, the results may not look correct.
+ */
+
+/* This is used for invisible elements that are created
+ * for the purpose of measuring the width and height
+ * of a node. */
+.cornus-layout {
+    visibility: hidden;
+}
+
+.cornus-content-holder {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+}
